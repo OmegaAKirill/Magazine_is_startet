@@ -1,10 +1,9 @@
 import React from 'react'
 
-
 const Home = () => {
   return (
     <div>
-        Home
+      тут пока что ничего нет
     </div>
   )
 }

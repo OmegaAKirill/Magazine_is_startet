@@ -3,6 +3,7 @@ import './Header.css'
 import {Link, useLocation} from 'react-router-dom'
 import { FaShoppingCart } from 'react-icons/fa' //тут пропиши npm i react-icons
 import Order from '../Order';
+// import {FaTrash} from 'react-icons/fa'
 
 const Header = (props) => {
     let [cartOpen, setCartOpen] = useState(false)
@@ -24,16 +25,19 @@ const Header = (props) => {
                 <p className='logo'>Мир одежды</p>
                 <div className='header-right'>
                 <Link to="/">
-                    <p className={`${activeTab === "Home" ? "active" : ""}`} onClick={() => setActiveTab("Home")} >изменить карту</p>
+                    <p className={`${activeTab === "Home" ? "active" : ""}`} onClick={() => setActiveTab("Home")} >основная</p>
+                </Link>
+                <Link to="/CreatEdit">
+                    <p className={`${activeTab === "CreatEdit" ? "active" : ""}`} onClick={() => setActiveTab("CreatEdit")}>создать товар</p>
                 </Link>
                 <Link to="/add">
-                    <p className={`${activeTab === "AddContact" ? "active" : ""}`} onClick={() => setActiveTab("AddContact")}>создать карту</p>
+                    <p className={`${activeTab === "AddContact" ? "active" : ""}`} onClick={() => setActiveTab("AddContact")}>товар</p>
                 </Link>
                 <Link to="/about">
-                    <p className={`${activeTab === "About" ? "active" : ""}`} onClick={() => setActiveTab("About")}>войти</p>
+                    <p className={`${activeTab === "About" ? "active" : ""}`} onClick={() => setActiveTab("About")}><FaShoppingCart onClick={() =>setCartOpen(cartOpen = !cartOpen)} className={`shop-cart-button ${cartOpen && 'active'}`}/></p>
                 </Link>
                 </div>
-                <FaShoppingCart onClick={() =>setCartOpen(cartOpen = !cartOpen)} className={`shop-cart-button ${cartOpen && 'active'}`}/>
+                
 
                 {cartOpen && (
                     <div className='shop-cart'>
@@ -42,7 +46,7 @@ const Header = (props) => {
                     </div>
                 )}
             </div>
-            <div className='presentation'></div>
+            {/* <div className='presentation'></div> */}
         </header>
     );
 }

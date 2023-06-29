@@ -1,0 +1,32 @@
+.cart-items-order{
+    display: flex;
+    border: 2px black solid;
+    margin: 15px;
+    border-radius: 20px;
+}
+.form-order{
+    display: flex;
+    
+}
+
+.cart-items-order img{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius:15px ;
+}
+.cart-items-order button{
+    width: 50px;
+    margin: 5px;
+}
+.delete{
+    align-self: flex-end;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+.delete:hover{
+    color: #fff;
+    background-color: red;
+    transform: ease;
+}

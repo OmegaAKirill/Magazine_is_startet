@@ -1,0 +1,51 @@
+.dark-theme{
+    background-color: #000305;
+    color: #fff;
+    transition: 0.5s;
+    transform: ease ;
+}
+.dark-theme .fon{
+    background-color: #fff;
+  transition: .5s;
+  transform: ease;  
+}
+.dark-theme .wrapper{
+    background: #000305;
+    color: #fff;
+}
+.dark-theme .category-btn{
+    background-color: rgb(20, 24, 26);
+    color: #fff;
+}
+
+.dark-theme main .item{
+    background-color: rgb(20, 24, 26);;
+}
+.dark-theme .category {
+    background-color: rgb(10, 16, 18);
+    border-color: rgb(235, 215, 186);
+    color: #fff;
+    
+}
+
+.dark-theme .btn {
+    text-decoration-color: initial;
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(9, 12, 14);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 15px;
+}
+.dark-theme .header p{
+    color: #fff;
+}
+.dark-theme .header .shop-cart{
+    background-color: rgb(20, 24, 26);
+}
+
+.dark-theme .cart-items-order {
+    background-color: rgb(20, 24, 26);
+}
+
+
+ 
+
